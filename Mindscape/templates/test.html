@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Test - Mindscape</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+
+</head>
+<body>
+    <h1>Mental Health Assessment</h1>
+    <form id="mentalHealthTest" onsubmit="calculateScore(event)">
+        <div id="questions-container">
+            <!-- Questions will be generated here -->
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result"></div>
+    <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+</body>
+</html>

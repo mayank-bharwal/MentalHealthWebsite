@@ -1,0 +1,15 @@
+@import 'common.css';
+
+/* Specific styles for journal page */
+.journal-entry {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.timestamp {
+    color: #999;
+    font-size: 14px;
+}

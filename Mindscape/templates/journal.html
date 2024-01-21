@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Journal - Mindscape</title>
+    <!-- Add links to CSS files here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/journal.css') }}">
+
+</head>
+<body>
+    <h1>My Journal</h1>
+    <div id="journal-entries">
+        {% for entry in journal_entries %}
+            <div class="journal-entry">
+                <p>{{ entry.entry }}</p>
+                <p class="timestamp">Posted on: {{ entry.created_at.strftime('%Y-%m-%d %H:%M') }}</p>
+            </div>
+        {% else %}
+            <p>No journal entries found.</p>
+        {% endfor %}
+    </div>
+    <a href="{{ url_for('dashboard') }}"><button>Back to Dashboard</button></a>
+</body>
+</html>

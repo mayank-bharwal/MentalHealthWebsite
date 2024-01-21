@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* Reset some default styles to ensure consistency */
+body, h1, p, ul, li, form, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center everything vertically and horizontally */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global styles */
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #f87e3d;
+}
+
+.container, .content {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #ececec;
+    font-size: 32px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+input, textarea, button {
+    margin-top: 10px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0077FF;
+    font-weight: bold;
+}
+/* Logo styles */
+.logo {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* Add more styles as needed */

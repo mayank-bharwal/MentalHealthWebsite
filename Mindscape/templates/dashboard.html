@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Mindscape</title>
+    <!-- Add links to CSS files here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+</head>
+<body>
+    <h1>Welcome to Your Dashboard</h1>
+
+    {% if session.last_test_result %}
+        <div id="test-result">
+            <h2>Your Last Test Result</h2>
+            <p>Score: {{ session.last_test_result.score }}</p>
+            <p>Recommendation: {{ session.last_test_result.recommendation }}</p>
+        </div>
+    {% endif %}
+
+    <section id="journaling">
+        <h2>Gratitude Journaling</h2>
+        <form method="POST" action="{{ url_for('submit_journal_entry') }}">
+            <textarea name="journal_entry" placeholder="Write your thoughts here..."></textarea>
+            <button type="submit">Submit Entry</button>
+        </form>
+
+        <!-- Button to view journal entries -->
+        <a href="{{ url_for('journal') }}"><button>View My Journal</button></a>
+    </section>
+
+    <section id="meditation">
+        <h2>Meditation Resources</h2>
+        <!-- List meditation audio or resources -->
+        <div class="meditation-audios">
+            <!-- Repeat this block for each audio file -->
+            <div class="audio-file">
+                <p>Five minute breathing</p>
+                <audio controls>
+                    <source src="{{ url_for('static', filename='audio/five minute meditation.mp3') }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>Ten minute breathing</p>
+                <audio controls>
+                    <source src="{{ url_for('static', filename='audio/ten minute meditation.mp3') }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>Three minute breathing</p>
+                <audio controls>
+                    <source src="{{ url_for('static', filename='audio/three minute meditation.mp3') }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+    </section>
+
+    <!-- Add other dashboard features as needed -->
+</body>
+</html>
