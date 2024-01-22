@@ -1,4 +1,4 @@
-# MindScape Flask Web Application
+# MindScape
 
 This is a simple web application developed using Flask, SQLAlchemy, and Werkzeug for managing journal entries and conducting tests. Users can register, log in, create journal entries, take tests, and view their dashboard.
 
