@@ -15,7 +15,7 @@ This is a simple web application developed using Flask, SQLAlchemy, and Werkzeug
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/mayank-bharwal/mindscape-flask-app.git
+   git clone https://github.com/mayank-bharwal/mindscape.git
    cd mindscape
    ```
 
