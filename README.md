@@ -7,7 +7,7 @@ This is a simple web application developed using Flask, SQLAlchemy, and Werkzeug
 
 - User registration and login
 - Create and view journal entries
-- Take tests and view test results
+- Take tests(Kessler Psychological Test (k10) and view test results
 - Secure password storage using Werkzeug
 - SQLite database integration using SQLAlchemy
 
