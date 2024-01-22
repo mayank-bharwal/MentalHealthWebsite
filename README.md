@@ -1,4 +1,4 @@
-# MindScape
+# MindScape - Flask Web Application
 http://mayank29.pythonanywhere.com/
 
 ![Screenshot 2024-01-21 at 11 29 26 PM](https://github.com/mayank-bharwal/MentalHealthWebsite/assets/119955673/f3f6ab7c-53ff-4767-b439-bc7ffb1e8d39)
