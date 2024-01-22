@@ -1,5 +1,5 @@
 # MindScape
-
+http://mayank29.pythonanywhere.com/
 This is a simple web application developed using Flask, SQLAlchemy, and Werkzeug for managing journal entries and conducting tests. Users can register, log in, create journal entries, take tests, and view their dashboard.
 
 ## Features
@@ -49,7 +49,7 @@ The app should now be running locally at http://localhost:5000.
 4. Take tests on the 'Test' page.
 5. View your dashboard to see your journal entries and test results.
 
-## Contributing
+## Contribute
 
 If you would like to contribute to this project, please open an issue or submit a pull request on GitHub.
 
